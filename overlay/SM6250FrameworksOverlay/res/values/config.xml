@@ -630,4 +630,7 @@
 
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
+
+    <!-- Threshold in micro watts above which a charger is rated as "fast"; 2.16A @ 5V  -->
+    <integer name="config_chargingFastThreshold">10800000</integer>
 </resources>
