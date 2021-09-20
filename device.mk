@@ -362,7 +362,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.multihal \
+    android.hardware.sensors@2.1-service.miatoll-multihal \
     libsensorndkbridge
 
 # Servicetracker
