@@ -627,4 +627,7 @@
 
     <!-- Threshold in micro watts above which a charger is rated as "fast"; 2.16A @ 5V  -->
     <integer name="config_chargingFastThreshold">10800000</integer>
+
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">true</bool>
 </resources>
