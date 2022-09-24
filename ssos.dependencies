@@ -9,6 +9,6 @@
     "remote": "github",
     "repository": "LeddaZ/kernel_xiaomi_miatoll",
     "target_path": "kernel/xiaomi/sm6250",
-    "branch": "frico_mr1-release"
+    "branch": "tm"
   }
 ]
