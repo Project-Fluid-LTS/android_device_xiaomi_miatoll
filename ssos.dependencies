@@ -7,7 +7,7 @@
   },
   {
     "remote": "github",
-    "repository": "LeddaZ/kernel_xiaomi_miatoll",
+    "repository": "LeddaZ/kernel_xiaomi_sm6250",
     "target_path": "kernel/xiaomi/sm6250",
     "branch": "tm"
   }
