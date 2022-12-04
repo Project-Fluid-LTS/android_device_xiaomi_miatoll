@@ -8,8 +8,13 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+PRODUCT_PACKAGES += \
+    CarrierConfigResCommonOverlay \
+    SM6250FrameworksOverlay \
+    SM6250SettingsOverlay \
+    SM6250SystemUIOverlay \
+    SM6250WifiOverlay \
+    TelephonyResCommonOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -395,7 +400,6 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     vendor.qti.hardware.wifi.hostapd@1.2.vendor \
     vendor.qti.hardware.wifi.supplicant@2.2.vendor \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
