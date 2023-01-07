@@ -2,3 +2,6 @@
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+
+# CPU
+ro.ssos.cpu=SD720G
