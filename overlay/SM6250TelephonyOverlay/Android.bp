@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "TelephonyResCommonOverlay",
+    name: "SM6250TelephonyOverlay",
     product_specific: true,
 }
