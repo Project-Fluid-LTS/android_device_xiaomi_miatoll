@@ -4,7 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SM6250CarrierConfigOverlay",
-    aaptflags: ["--keep-raw-values"],
-    product_specific: true,
+    name: "MiatollSettingsOverlay",
+    vendor: true,
 }

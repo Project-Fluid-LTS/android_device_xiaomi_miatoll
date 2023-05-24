@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "SM6250WifiOverlay",
+    name: "MiatollWifiOverlay",
     theme: "WifiOverlay",
     sdk_version: "current",
     vendor: true

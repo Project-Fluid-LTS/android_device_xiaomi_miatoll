@@ -21,26 +21,6 @@ def strcoll_extract_utils(string1: str, string2: str) -> int:
     string1 = re.sub("^-", "", string1)
     string2 = re.sub("^-", "", string2)
 
-    # If no directories, compare normally
-    if "/" not in string1 and "/" not in string2:
-        return strcoll(string1, string2)
-
-    string1_dir = string1.rsplit("/", 1)[0] + "/"
-    string2_dir = string2.rsplit("/", 1)[0] + "/"
-    if string1_dir == string2_dir:
-        # Same directory, compare normally
-        return strcoll(string1, string2)
-
-    if string1_dir.startswith(string2_dir):
-        # First string dir is a subdirectory of the second one,
-        # return string1 > string2
-        return -1
-
-    if string2_dir.startswith(string1_dir):
-        # Second string dir is a subdirectory of the first one,
-        # return string2 > string1
-        return 1
-
     # Compare normally
     return strcoll(string1, string2)
 
@@ -62,6 +42,5 @@ if __name__ == "__main__":
             section_list.sort(key=cmp_to_key(strcoll_extract_utils))
             ordered_sections.append("\n".join(section_list))
 
-        with open(file, "w") as f:
+        with open(file, "w", newline='\n') as f:
             f.write("\n\n".join(ordered_sections).strip() + "\n")
-            
