@@ -34,7 +34,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Inherit Google Camera
-$(call inherit-product, vendor/xiaomi/miatoll-gcam/miatoll-gcam-vendor.mk)
+$(call inherit-product, vendor/xiaomi/curtana-gcam/curtana-gcam-vendor.mk)
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
