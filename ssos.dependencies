@@ -16,5 +16,11 @@
     "repository": "LeddaZ/android_vendor_xiaomi_miatoll-gcam",
     "target_path": "vendor/xiaomi/miatoll-gcam",
     "branch": "android_11"
+  },
+  {
+    "remote": "ssos-lts",
+    "repository": "android_vendor_xiaomi_miatoll",
+    "target_path": "vendor/xiaomi/miatoll",
+    "branch": "android_11"
   }
 ]
