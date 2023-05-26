@@ -311,7 +311,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.xiaomi-libperfmgr
+    android.hardware.power-service.xiaomi-libperfmgr \
     libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
@@ -331,9 +331,9 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/curtana/proprietary/vendor/firmware/focaltech_ts_fw_huaxing.bin:recovery/root/vendor/firmware/focaltech_ts_fw_huaxing.bin \
-    vendor/xiaomi/curtana/proprietary/vendor/firmware/novatek_ts_tianma_fw.bin:recovery/root/vendor/firmware/novatek_ts_tianma_fw.bin \
-    vendor/xiaomi/curtana/proprietary/vendor/firmware/novatek_ts_tianma_mp.bin:recovery/root/vendor/firmware/novatek_ts_tianma_mp.bin
+    vendor/xiaomi/miatoll/proprietary/vendor/firmware/focaltech_ts_fw_huaxing.bin:recovery/root/vendor/firmware/focaltech_ts_fw_huaxing.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/firmware/novatek_ts_tianma_fw.bin:recovery/root/vendor/firmware/novatek_ts_tianma_fw.bin \
+    vendor/xiaomi/miatoll/proprietary/vendor/firmware/novatek_ts_tianma_mp.bin:recovery/root/vendor/firmware/novatek_ts_tianma_mp.bin
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -348,14 +348,17 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy.sh
 
 PRODUCT_PACKAGES += \
+    init.device.rc \
     init.miatoll.perf.rc \
-    init.miatoll.rc \
     init.qcom.power.rc \
     init.qcom.rc \
-    init.recovery.qcom.rc \
     init.target.rc \
-    fstab.qcom \
-    ueventd.qcom.rc
+    fstab.qcom
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc \
+    $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
