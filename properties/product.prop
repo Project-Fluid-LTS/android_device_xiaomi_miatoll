@@ -4,4 +4,4 @@ iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
 
 # CPU
-ro.ssos.cpu=Snapdragon 720G
+ro.ssos.cpu=Qualcomm® Snapdragon™ 720G
