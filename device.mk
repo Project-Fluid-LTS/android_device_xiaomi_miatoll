@@ -317,10 +317,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
-# QCOM hardware
-PRODUCT_BOARD_PLATFORM := atoll
-PRODUCT_USES_QCOM_HARDWARE := true
-
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
