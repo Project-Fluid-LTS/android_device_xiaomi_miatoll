@@ -19,7 +19,7 @@
   },
   {
     "remote": "fluid-lts",
-    "repository": "android_vendor_xiaomi_miatoll",
+    "repository": "vendor_xiaomi_miatoll",
     "target_path": "vendor/xiaomi/miatoll",
     "branch": "fluid-11"
   }
