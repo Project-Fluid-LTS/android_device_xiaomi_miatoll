@@ -15,12 +15,12 @@
     "remote": "gitlab",
     "repository": "LeddaZ/android_vendor_xiaomi_miatoll-gcam",
     "target_path": "vendor/xiaomi/miatoll-gcam",
-    "branch": "android_11"
+    "branch": "fluid-11"
   },
   {
-    "remote": "ssos-lts",
+    "remote": "fluid-lts",
     "repository": "android_vendor_xiaomi_miatoll",
     "target_path": "vendor/xiaomi/miatoll",
-    "branch": "android_11"
+    "branch": "fluid-11"
   }
 ]

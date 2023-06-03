@@ -1,7 +1,8 @@
+# Fluid props
+ro.fluid.cpu=SD720G
+ro.fluid.maintainer=LeddaZ
+
 # IORap
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
-
-# CPU
-ro.ssos.cpu=Qualcomm® Snapdragon™ 720G
